@@ -1,4 +1,4 @@
-namespace Fitness_Project
+namespace UserProfileService
 {
     public class WeatherForecast
     {
