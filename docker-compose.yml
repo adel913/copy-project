@@ -1,0 +1,50 @@
+services:
+  workoutcatalogservice:
+    image: ${DOCKER_REGISTRY-}workoutcatalogservice
+    build:
+      context: .
+      dockerfile: WorkoutCatalogService/Dockerfile
+
+  apigateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+
+  identityservice:
+    image: ${DOCKER_REGISTRY-}identityservice
+    build:
+      context: .
+      dockerfile: IdentityService/Dockerfile
+
+  notificationservice:
+    image: ${DOCKER_REGISTRY-}notificationservice
+    build:
+      context: .
+      dockerfile: NotificationService/Dockerfile
+
+  nutritionservice:
+    image: ${DOCKER_REGISTRY-}nutritionservice
+    build:
+      context: .
+      dockerfile: NutritionService/Dockerfile
+
+  reportsservice:
+    image: ${DOCKER_REGISTRY-}reportsservice
+    build:
+      context: .
+      dockerfile: ReportsService/Dockerfile
+
+  userprofileservice:
+    image: ${DOCKER_REGISTRY-}userprofileservice
+    build:
+      context: .
+      dockerfile: UserProfileService/Dockerfile
+
+  usertrainingtrackingservice:
+    image: ${DOCKER_REGISTRY-}usertrainingtrackingservice
+    build:
+      context: .
+      dockerfile: UserTrainingTrackingService/Dockerfile
+  
+ 
